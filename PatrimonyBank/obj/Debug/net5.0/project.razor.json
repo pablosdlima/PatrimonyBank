@@ -15629,6 +15629,31 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\GerenciaInvestidor.cshtml",
+      "TargetPath": "Views\\Investidors\\GerenciaInvestidor.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Index.cshtml",
+      "TargetPath": "Views\\Investidors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Create.cshtml",
+      "TargetPath": "Views\\Investidors\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Delete.cshtml",
+      "TargetPath": "Views\\Investidors\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Edit.cshtml",
+      "TargetPath": "Views\\Investidors\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15641,6 +15666,11 @@
     {
       "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Details.cshtml",
+      "TargetPath": "Views\\Investidors\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

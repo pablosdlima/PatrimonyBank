@@ -152,8 +152,16 @@ body{
     text-align-last: center;
     margin: 2% auto;
     color:grey;
+    
+}
+.fonteLeveP{
     font-size: 1.20em;
 }
+
+.fonteLeveM{
+    font-size: 2.10em;
+}
+
 .alturaLinhaP{
     flex-wrap: wrap;
     padding:2%;
@@ -161,9 +169,10 @@ body{
 }
 
 .bordaTxtTitulo{
-    border-bottom: 5px solid gray;
+    border-bottom: 5px solid rgb(172, 167, 167);
     border-bottom-width:2px;
-    line-height:5vh;
+    line-height:8vh;
+    width:35%;
 }
 
 .txtColunas{
@@ -218,9 +227,22 @@ https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjwwY-LBhD6ARIsA
     flex-direction: column;
     align-items: center;
 }
+.cxOps {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ops:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor:pointer;
+}
 
 .corsobreposta {
-    background: #6aafee;
+    background: #4992d6;
     width: 42%;
     height: 62%;
     opacity: 0.3;
