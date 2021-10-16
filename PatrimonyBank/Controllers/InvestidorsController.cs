@@ -30,6 +30,12 @@ namespace PatrimonyBank.Controllers
             return View(await _context.Investidor.ToListAsync());
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Index(string cnpj) //será substituida por epi
+        {
+            return View(await _context.Investidor.FirstOrDefaultAsync(a => a.CPF.Equals(cnpj) || a.Cnpj.Equals(cnpj)));
+        }
+
         // GET: Investidors/Details/5
         public async Task<IActionResult> Details(int? id)
         {

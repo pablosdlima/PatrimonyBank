@@ -1,14 +1,26 @@
 ﻿<div class="">
     <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Gerencie os Investidores</p>
 </div>
-<div id="" class="larguraG alturaM centralizeDiv cxOps flex centralizeY">
-    <a asp-action="" asp-controller="" id="" class="alturaG larguraP blue accent-2 arredondarTopoEsquerda ops" onclick="">
+<div id="addId" class="larguraG alturaM centralizeDiv cxOps flex centralizeY">
+    <div id="" class="alturaG larguraP blue accent-2 arredondarTopoEsquerda ops" onclick="InserirDetalhe()">
         <h3 class="center fonteLeveP" style="color:snow;">+ Novo Investidor</h3>
         <p class="fonteLeveP tituloLeve" style="color:snow; padding:8%;"><i>Insira as informações de um novo Investidor</i></p>
-    </a>
+    </div>
 
-    <a asp-action="index" asp-controller="Investidors" id="" class="alturaG larguraP blue accent-2 arredondarTopoDireita ops" onclick="">
+    <a id="" asp-action="index" asp-controller="Investidors" class="alturaG larguraP blue accent-2 arredondarTopoDireita ops">
         <h3 class="center fonteLeveP" style="color:snow;">- Ver Investidores</h3>
         <p class="fonteLeveP tituloLeve" style="color:snow; padding:8%; margin-left:6%;"><i>Lista dos investidores existentes em nossa base</i></p>
     </a>
 </div>
+
+<div id="cpfId" class="larguraPM alturaP centralizeDiv contornoP" style="display:none;">
+    <button class="btn red" onclick="OcultarModals()">X</button>
+     <form asp-action="Index" asp-controller="Investidors">
+        <input id="txtCpf" placeholder="Insira seu cpf:" required>
+        <input type="submit" value="Buscar" class="btn blue accent-2">
+     </form>
+</div>
+
+@section Scripts{
+    <script src="~/js/detalhesModelo.js"></script>
+}
