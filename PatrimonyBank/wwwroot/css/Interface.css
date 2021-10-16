@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+a {
+    color: grey;
+}
+html {
+    height: 100vh;
+}
+
+body{
+    font: 1.10em Arial, sans-serif;
+    color:gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundoAzul{
+    background-color:#6aafee;
+    color:white;
+}
+
+.fundoCinza{
+    background-color:#c0bebe;
+    color:silver;
+}
+
+.alturaVhP{ /*medidas para tamanho da tela, maior eficacia para containers pai*/
+    height:30vh;
+}
+.alturaVhM{ /*medidas para tamanho da tela, maior eficacia para containers pai*/
+    height:50vh;
+}
+.alturaVhG{ /*medidas para tamanho da tela, maior eficacia para containers pai*/
+    height:75vh;
+}
+.alturaVhGG{ /*medidas para tamanho da tela, maior eficacia para containers pai*/
+    height:100vh;
+}
+
+.alturaPP{ /*medidas para containers filho*/
+    height:12%;
+}
+.alturaP{ /*medidas para containers filho*/
+    height:20%;
+}
+.alturaPM{ /*medidas para containers filho*/
+    height:35%;
+}
+.alturaM{ /*medidas para containers filho*/
+    height:50%;
+}
+.alturaMG{ /*medidas para containers filho*/
+    height:65%;
+}
+.alturaG{ /*medidas para containers filho*/
+    height:80%;
+}
+.alturaGG{ /*medidas para containers filho*/
+    height:95%;
+}
+    /*FIM - Altura medidas*/
+
+    /*Largura medidas*/
+    
+.larguraPP{
+    width:12%;
+}
+.larguraP{
+    width:20%;
+}
+.larguraPM{
+    width:35%;
+}
+.larguraM{
+    width:50%;
+}
+.larguraMG{
+    width:65%;
+}
+.larguraG{
+    width:80%;
+}
+.larguraGG{
+    width:95%;
+}
+
+.arredondarDireita{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.arredondarEsquerda{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.arredondarTopoDireita{
+    border-top-right-radius: 75px;
+    border-spacing: 10px;
+}
+
+.arredondarBaixoDireita{
+    border-bottom-right-radius: 75px;
+    border-spacing: 10px;
+}
+
+.arredondarTopoEsquerda{
+    border-top-left-radius: 75px;
+    border-spacing: 10px;
+}
+
+.arredondarBaixoEsquerda{
+    border-bottom-left-radius: 75px;
+    border-spacing: 10px;
+}
+
+.circulo{
+    border-radius: 50%;
+}
+
+.contornoP{
+    box-shadow: 1px 1px 1px 1px rgb(212, 208, 208);
+    border-radius: 5px;
+}
+
+.contornoM{
+    box-shadow: 2px 1px 2px 1px rgb(212, 208, 208);
+    border-radius: 10px;
+}
+
+.contornoG{
+    box-shadow: 2px 3px 2px 3px rgb(212, 208, 208);
+    border-radius: 15px;
+}
+
+.centralizeY{
+    display: flex;
+    align-items:center;
+}
+
+.centralizeDiv{
+    margin:0% auto;
+}
+
+.tituloLeve {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align-last: center;
+    margin: 2% auto;
+    color:grey;
+    font-size: 1.20em;
+}
+.alturaLinhaP{
+    flex-wrap: wrap;
+    padding:2%;
+    line-height: 65px;
+}
+
+.bordaTxtTitulo{
+    border-bottom: 5px solid gray;
+    border-bottom-width:2px;
+    line-height:5vh;
+}
+
+.txtColunas{
+    column-count: 2;
+    column-gap: 10%;
+    column-rule: 2px solid silver;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexFlow{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-end {
+    justify-content: flex-end;
+    flex:auto;
+}
+.flexEvenly{
+    justify-content: space-evenly;
+    flex: auto;
+}
+
+.flexItem {
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.flexDirectionCenter {
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: unset;
+    flex-direction: column;
+}
+/*posicionamento flex
+https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjwwY-LBhD6ARIsACvT72OcM4dZOW56fCb_cO7DV355Dl2dMFe_jerx54n5zd6YcYupjjKaOtUaAuk8EALw_wcB
+*/
+
+.legendaTxt{
+    font: 1.00em "Poppins", sans-serif;
+    text-align: center;
+}
+
+.descricaoTxt{
+    font: 0.70em Arial, sans-serif;
+    font-style: italic;
+}
+.flexWrap{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corsobreposta {
+    background: #6aafee;
+    width: 42%;
+    height: 62%;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 99;
+}

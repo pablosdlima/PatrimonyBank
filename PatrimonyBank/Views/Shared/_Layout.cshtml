@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PatrimonyBank</title>
+    <link href="~/lib/materialize/css/materialize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Interface.css">
+</head>
+<body>
+     <header class="flex contornoP contornoP">
+        <img class="" src="~/img/Patrimony.png" alt="Logo Patrimony.png" width="5%" style="margin:2%;">
+            <ul class="flexEvenly flex centralizeY">
+                <li class="flow-text">
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="flow-text">
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Perfil</a>
+                </li>
+                <li class="flow-text">
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Investidor</a>
+                </li>
+                <li class="flow-text">
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+                </li>
+            </ul>
+    </header> 
+    <div class="alturaVhG CentralizeY laguraG">
+            @RenderBody()
+    </div>
+    <br>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
