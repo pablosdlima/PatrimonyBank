@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PatrimonyBank.ViewMoldels;
 
 namespace PatrimonyBank.Data
 {
@@ -14,5 +15,6 @@ namespace PatrimonyBank.Data
 
         }
         public DbSet<Investidor> Investidor { get; set; }
+        public DbSet<PatrimonyBank.ViewMoldels.AccountPFVm> AccountPFVm { get; set; }
     }
 }

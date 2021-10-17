@@ -13,12 +13,12 @@
     </a>
 </div>
 
-<div id="cpfId" class="larguraPM alturaPM centralizeDiv contornoP" style="display:none; border:1px solid silver;">
+<div id="cpfId" class="larguraPM alturaPM centralizeDiv contornoM" style="display:none; border:1px solid silver;">
     <button class="btn red" onclick="OcultarModals()">X</button>
     <br>
     <p class="tituloLeve fonteLevep center">Informe o CPF ou CNPJ para agilizarmos o cadastro pra você</p>
-     <form asp-action="Index" asp-controller="Investidors">
-        <input id="txtCpf" placeholder="Insira o CPF ou CNPJ:" required>
+     <form asp-action="GetAccountsPF" asp-controller="Accounts">
+        <input id="txtCpf" placeholder="Insira CNPJ:" name="Cpf" required>
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
      </form>
 </div>
