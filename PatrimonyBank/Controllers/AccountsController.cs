@@ -22,10 +22,10 @@ namespace PatrimonyBank.Controllers
         [HttpPost]
         public async Task<IActionResult>GetAccountsPF(string Cpf)
         {
-            return RedirectToAction("DetailsGetAccountsPF", new { cpf = Cpf });
+            return RedirectToAction("DetailsGetAccounts", new { cpf = Cpf });
         }
 
-        public async Task<IActionResult> DetailsGetAccountsPF(string cpf)
+        public async Task<IActionResult> DetailsGetAccounts(string cpf)
         {
             if (cpf == null)
             {
@@ -90,11 +90,11 @@ namespace PatrimonyBank.Controllers
             };
             return View(obj);
         }
-        [HttpPost]
-        public async Task<IActionResult>GetAccountsPJ(string Cpf)
-        {
-            return RedirectToAction("DetailsGetAccountsPJ", new { cpf = Cpf });
-        }
+        //[HttpPost]
+        //public async Task<IActionResult>GetAccountsPJ(string Cpf)
+        //{
+        //    return RedirectToAction("DetailsGetAccountsPJ", new { cpf = Cpf });
+        //}
 
         //public async Task<IActionResult> DetailsGetAccountsPJ(string cnpj)
         //{

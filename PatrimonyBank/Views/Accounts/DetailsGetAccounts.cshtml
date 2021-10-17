@@ -1,272 +1,188 @@
 ﻿@model PatrimonyBank.ViewMoldels.AccountPFVm
+    <div class="">
+        <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.CPF)</p>
+    </div>
+<div class="centralizeDiv larguraM contornoM">
+    <table class="row">
+        <tr class="larguraG center">
+            <td>
+                @Html.DisplayNameFor(model => model.brandName)
+                @Html.DisplayFor(model => model.brandName)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.civilName)
+                @Html.DisplayFor(model => model.civilName)
+            <td>
+            <td>
+                @Html.DisplayNameFor(model => model.socialName)
+                @Html.DisplayFor(model => model.socialName)
+            </td>
+        </tr>
+        <tr class="larguraG center">
+            <td>
+                @Html.DisplayNameFor(model => model.dateTime)
+                @Html.DisplayFor(model => model.dateTime)
 
-<div>
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.brandName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.brandName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.civilName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.civilName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.socialName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.socialName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.dateTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.dateTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.maritalStatusCode)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.maritalStatusCode)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.maritalStatusAdditionalInfo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.maritalStatusAdditionalInfo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.sex)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.sex)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.companyCnpj)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.companyCnpj)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CPF)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CPF)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.hasBrazilianNationality)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.hasBrazilianNationality)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.otherNationalitiesInfo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.otherNationalitiesInfo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.typeDocument)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.typeDocument)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.typeAdditionalInfo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.typeAdditionalInfo)
-        </dd>
-        <dt class = "col-sm-2">
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.maritalStatusCode)
+                @Html.DisplayFor(model => model.maritalStatusCode)
+            </td>
+             <td>
+                @*@Html.DisplayNameFor(model => model.maritalStatusAtritionalInfo)
+                @Html.DisplayFor(model => model.maritalStatusAtritionalInfo)*@
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.sex)
+                @Html.DisplayFor(model => model.sex)
+            </td>
+        </tr> 
+        <tr class="larguraG center">
+            <td>
+                @Html.DisplayNameFor(model => model.CPF)
+                @Html.DisplayFor(model => model.CPF)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.hasBrazilianNationality)
+                @Html.DisplayFor(model => model.hasBrazilianNationality)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.otherNationalitiesInfo)
+                @Html.DisplayFor(model => model.otherNationalitiesInfo)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.typeDocument)
+                @Html.DisplayFor(model => model.typeDocument)
+            </td>
+        </tr>
+
+        <!--<tr class="larguraG center">
             @Html.DisplayNameFor(model => model.numberDocument)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.numberDocument)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.checkDigit)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.checkDigit)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.additionalInfo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.additionalInfo)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">-->
+            @*@Html.DisplayNameFor(model => model.atritionalInfo)
+            @Html.DisplayFor(model => model.atritionalInfo)*@
+        <!--</tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.expirationDate)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.expirationDate)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.issueDate)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.issueDate)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.country)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.country)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.typeFiliation)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.typeFiliation)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.civilNameFiliation)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.civilNameFiliation)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.socialNameFiliation)
-        </dt>
-        <dd class = "col-sm-10">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayFor(model => model.socialNameFiliation)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.address)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.address)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.additionalInfoAdress)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.additionalInfoAdress)
-        </dd>
-        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.socialNameFiliation)
+        </tr>
+        <tr class="larguraG center">-->
+            @*@Html.DisplayNameFor(model => model.atrress)
+            @Html.DisplayFor(model => model.atrress)*@
+        <!--</tr>
+        <tr class="larguraG center">-->
+            @*@Html.DisplayNameFor(model => model.atritionalInfoAdress)
+            @Html.DisplayFor(model => model.atritionalInfoAdress)*@
+        <!--</tr>
+        <tr class="larguraG center">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.districtName)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.districtName)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.townName)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.townName)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.ibgeTownCode)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ibgeTownCode)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.countrySubDivision)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.countrySubDivision)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.postCode)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.postCode)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.countryAdress)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.countryAdress)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
+            @Html.DisplayNameFor(model => model.countryAdress)-->
+            @*@Html.DisplayFor(model => model.counstryAdress)*@
+        <!--</tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.countryCode)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.countryCode)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.typePhone1)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.typePhone1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.additionalInfoPhone1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.additionalInfoPhone1)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">-->
+            @*@Html.DisplayNameFor(model => model.atritionalInfoPhone1)
+            @Html.DisplayFor(model => model.atritionalInfoPhone1)*@
+        <!--</tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.countryCallingCode1)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.countryCallingCode1)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.areaCodePhone1)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.areaCodePhone1)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.numberPhone1)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.numberPhone1)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.phoneExtension1)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.phoneExtension1)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.typePhone2)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.typePhone2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.additionalInfoPhone2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.additionalInfoPhone2)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">-->
+            @*@Html.DisplayNameFor(model => model.atritionalInfoPhone2)
+            @Html.DisplayFor(model => model.atritionalInfoPhone2)*@
+        <!--</tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.countryCallingCode2)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.countryCallingCode2)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.areaCodePhone2)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.areaCodePhone2)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.numberPhone2)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.numberPhone2)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.phoneExtension2)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.phoneExtension2)
-        </dd>
-        <dt class = "col-sm-2">
+        </tr>
+        <tr class="larguraG center">
             @Html.DisplayNameFor(model => model.email)
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.email)
-        </dd>
-    </dl>
+        </tr>-->
+    </table>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.personalID">Edit</a> |
