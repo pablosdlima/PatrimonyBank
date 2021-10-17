@@ -150,3 +150,14 @@ D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\ref\Patri
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.pdb
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.genruntimeconfig.cache
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.csproj.AssemblyReference.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.csprojAssemblyReference.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.AssemblyInfoInputs.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.AssemblyInfo.cs
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.csproj.CoreCompileInputs.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.RazorAssemblyInfo.cache
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.RazorAssemblyInfo.cs
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.dll
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\ref\PatrimonyBank.dll
+C:\Users\Mateus Marques\Source\Repos\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.pdb
