@@ -4,21 +4,38 @@
     <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Gerencie os Investidores</p>
 </div>
 <div id="addId" class="larguraG alturaM centralizeDiv cxOps flex centralizeY">
-    <div id="" class="alturaG larguraP blue accent-2 arredondarTopoEsquerda ops" onclick="InserirDetalhe()">
+    <div id="" class="alturaG larguraP blue accent-2 arredondarTopoEsquerda ops" onclick="InserirCPF()">
         <h3 class="center fonteLeveP" style="color:snow;">+ Novo Investidor</h3>
-        <p class="fonteLeveP tituloLeve" style="color:snow; padding:8%;"><i>Insira as informações de um novo Investidor</i></p>
+        <h5 class="center fonteLeveP" style="color:snow;">+ Por CPF</h5>
+    </div>
+
+     <div id="" class="alturaG larguraP blue accent-2 arredondarTopo ops" onclick="InserirCNPJ()">
+        <h3 class="center fonteLeveP" style="color:snow;">+ Novo Investidor</h3>
+        <h5 class="center fonteLeveP" style="color:snow;">Por CNPJ</h5>
     </div>
 
     <a id="" asp-action="index" asp-controller="Investidors" class="alturaG larguraP blue accent-2 arredondarTopoDireita ops">
         <h3 class="center fonteLeveP" style="color:snow;">- Ver Investidores</h3>
-        <p class="fonteLeveP tituloLeve" style="color:snow; padding:8%; margin-left:6%;"><i>Lista dos investidores existentes em nossa base</i></p>
+        <h5 class="center fonteLeveP" style="color:snow;">- Por CPF e CNPJ</h5>
     </a>
+
+
 </div>
 
 <div id="cpfId" class="larguraPM alturaPM centralizeDiv contornoM" style="display:none; border:1px solid silver;">
     <button class="btn red" onclick="OcultarModals()">X</button>
     <br>
-    <p class="tituloLeve fonteLevep center">Informe o CPF ou CNPJ para agilizarmos o cadastro pra você</p>
+    <p class="tituloLeve fonteLevep center">Informe o CPF para agilizarmos o cadastro pra você</p>
+     <form asp-action="GetAccountsPF" asp-controller="Accounts">
+        <input id="txtCpf" placeholder="Insira CPF:" name="Cpf" required>
+        <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
+     </form>
+</div>
+
+<div id="cnpjId" class="larguraPM alturaPM centralizeDiv contornoM" style="display:none; border:1px solid silver;">
+    <button class="btn red" onclick="OcultarModals()">X</button>
+    <br>
+    <p class="tituloLeve fonteLevep center">Informe o CNPJ para agilizarmos o cadastro pra você</p>
      <form asp-action="GetAccountsPF" asp-controller="Accounts">
         <input id="txtCpf" placeholder="Insira CNPJ:" name="Cpf" required>
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">

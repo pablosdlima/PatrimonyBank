@@ -11,11 +11,11 @@ html {
     height: 100vh;
 }
 
-body{
-    font: 1.10em Arial, sans-serif;
+body {
+    color: aliceblue;
+    font-size: 1.1vw; /*vw é fonte responsiva*/
+    font-family: "Poppins", sans-serif;
     color:gray;
-    display: flex;
-    flex-direction: column;
 }
 
 .fundoAzul{
@@ -242,10 +242,10 @@ https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjwwY-LBhD6ARIsA
 }
 
 .corsobreposta {
-    background: #4992d6;
+    background: gray;
     width: 42%;
     height: 62%;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute;
     z-index: 99;
 }

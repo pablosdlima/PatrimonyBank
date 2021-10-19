@@ -1,190 +1,74 @@
 ﻿@model PatrimonyBank.ViewMoldels.AccountPFVm
-    <div class="">
-        <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.CPF)</p>
-    </div>
-<div class="centralizeDiv larguraM contornoM">
-    <table class="row">
-        <tr class="larguraG center">
-            <td>
-                @Html.DisplayNameFor(model => model.brandName)
-                @Html.DisplayFor(model => model.brandName)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.civilName)
-                @Html.DisplayFor(model => model.civilName)
-            <td>
-            <td>
-                @Html.DisplayNameFor(model => model.socialName)
-                @Html.DisplayFor(model => model.socialName)
-            </td>
-        </tr>
-        <tr class="larguraG center">
-            <td>
-                @Html.DisplayNameFor(model => model.dateTime)
-                @Html.DisplayFor(model => model.dateTime)
-
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.maritalStatusCode)
-                @Html.DisplayFor(model => model.maritalStatusCode)
-            </td>
-             <td>
-                @*@Html.DisplayNameFor(model => model.maritalStatusAtritionalInfo)
-                @Html.DisplayFor(model => model.maritalStatusAtritionalInfo)*@
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.sex)
-                @Html.DisplayFor(model => model.sex)
-            </td>
-        </tr> 
-        <tr class="larguraG center">
-            <td>
-                @Html.DisplayNameFor(model => model.CPF)
-                @Html.DisplayFor(model => model.CPF)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.hasBrazilianNationality)
-                @Html.DisplayFor(model => model.hasBrazilianNationality)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.otherNationalitiesInfo)
-                @Html.DisplayFor(model => model.otherNationalitiesInfo)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.typeDocument)
-                @Html.DisplayFor(model => model.typeDocument)
-            </td>
-        </tr>
-
-        <!--<tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.numberDocument)
-            @Html.DisplayFor(model => model.numberDocument)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.checkDigit)
-            @Html.DisplayFor(model => model.checkDigit)
-        </tr>
-        <tr class="larguraG center">-->
-            @*@Html.DisplayNameFor(model => model.atritionalInfo)
-            @Html.DisplayFor(model => model.atritionalInfo)*@
-        <!--</tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.expirationDate)
-            @Html.DisplayFor(model => model.expirationDate)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.issueDate)
-            @Html.DisplayFor(model => model.issueDate)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.country)
-            @Html.DisplayFor(model => model.country)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.typeFiliation)
-            @Html.DisplayFor(model => model.typeFiliation)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.civilNameFiliation)
-            @Html.DisplayFor(model => model.civilNameFiliation)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayFor(model => model.socialNameFiliation)
-            @Html.DisplayNameFor(model => model.socialNameFiliation)
-        </tr>
-        <tr class="larguraG center">-->
-            @*@Html.DisplayNameFor(model => model.atrress)
-            @Html.DisplayFor(model => model.atrress)*@
-        <!--</tr>
-        <tr class="larguraG center">-->
-            @*@Html.DisplayNameFor(model => model.atritionalInfoAdress)
-            @Html.DisplayFor(model => model.atritionalInfoAdress)*@
-        <!--</tr>
-        <tr class="larguraG center">
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.districtName)
-            @Html.DisplayFor(model => model.districtName)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.townName)
-            @Html.DisplayFor(model => model.townName)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.ibgeTownCode)
-            @Html.DisplayFor(model => model.ibgeTownCode)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.countrySubDivision)
-            @Html.DisplayFor(model => model.countrySubDivision)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.postCode)
-            @Html.DisplayFor(model => model.postCode)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.countryAdress)-->
-            @*@Html.DisplayFor(model => model.counstryAdress)*@
-        <!--</tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.countryCode)
-            @Html.DisplayFor(model => model.countryCode)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.typePhone1)
-            @Html.DisplayFor(model => model.typePhone1)
-        </tr>
-        <tr class="larguraG center">-->
-            @*@Html.DisplayNameFor(model => model.atritionalInfoPhone1)
-            @Html.DisplayFor(model => model.atritionalInfoPhone1)*@
-        <!--</tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.countryCallingCode1)
-            @Html.DisplayFor(model => model.countryCallingCode1)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.areaCodePhone1)
-            @Html.DisplayFor(model => model.areaCodePhone1)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.numberPhone1)
-            @Html.DisplayFor(model => model.numberPhone1)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.phoneExtension1)
-            @Html.DisplayFor(model => model.phoneExtension1)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.typePhone2)
-            @Html.DisplayFor(model => model.typePhone2)
-        </tr>
-        <tr class="larguraG center">-->
-            @*@Html.DisplayNameFor(model => model.atritionalInfoPhone2)
-            @Html.DisplayFor(model => model.atritionalInfoPhone2)*@
-        <!--</tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.countryCallingCode2)
-            @Html.DisplayFor(model => model.countryCallingCode2)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.areaCodePhone2)
-            @Html.DisplayFor(model => model.areaCodePhone2)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.numberPhone2)
-            @Html.DisplayFor(model => model.numberPhone2)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.phoneExtension2)
-            @Html.DisplayFor(model => model.phoneExtension2)
-        </tr>
-        <tr class="larguraG center">
-            @Html.DisplayNameFor(model => model.email)
-            @Html.DisplayFor(model => model.email)
-        </tr>-->
+<div class="">
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.CPF) @Html.DisplayFor(model => model.CPF) </p>
+</div>
+<br>
+<div class="centralizeDiv larguraPP flex flexEvenly">
+    <div class="center"><a asp-controller="" asp-action="" asp-route-id="@Model.personalID" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
+</div>
+<br>
+<div class="centralizeDiv larguraG alturaVHG contornoM" style="padding:1%; background-color:snow;">
+    <table class="striped">
+        <thead style="color:snow;" class="blue darken-2">
+            <tr>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.email): </strong> @Html.DisplayFor(model => model.email)</td>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.civilName): </strong> @Html.DisplayFor(model => model.civilName)</td>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.brandName): </strong> @Html.DisplayFor(model => model.brandName)</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.socialName): </strong>@Html.DisplayFor(model => model.socialName)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.dateTime): </strong>@Html.DisplayFor(model => model.dateTime)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.maritalStatusCode): </strong> @Html.DisplayFor(model => model.maritalStatusCode) </td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.sex): </strong> @Html.DisplayFor(model => model.sex)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.hasBrazilianNationality): </strong>@Html.DisplayFor(model => model.hasBrazilianNationality)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.otherNationalitiesInfo): </strong>@Html.DisplayFor(model => model.otherNationalitiesInfo)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.typeDocument): </strong>@Html.DisplayFor(model => model.typeDocument)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.numberDocument): </strong>@Html.DisplayFor(model => model.numberDocument)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.expirationDate): </strong>@Html.DisplayFor(model => model.expirationDate)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.issueDate): </strong>@Html.DisplayFor(model => model.issueDate)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.country): </strong>@Html.DisplayFor(model => model.country)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.typeFiliation): </strong>@Html.DisplayFor(model => model.typeFiliation)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.civilNameFiliation): </strong>@Html.DisplayFor(model => model.civilNameFiliation)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.districtName): </strong>@Html.DisplayFor(model => model.districtName)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.townName): </strong>@Html.DisplayFor(model => model.townName)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.ibgeTownCode): </strong>@Html.DisplayFor(model => model.ibgeTownCode)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countrySubDivision): </strong>@Html.DisplayFor(model => model.countrySubDivision)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.postCode): </strong>@Html.DisplayFor(model => model.postCode)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countryAdress): </strong>@Html.DisplayFor(model => model.countryAdress)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countryCode): </strong>@Html.DisplayFor(model => model.countryCode)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.typePhone1): </strong>@Html.DisplayFor(model => model.typePhone1)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countryCallingCode1): </strong>@Html.DisplayFor(model => model.countryCallingCode1)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.areaCodePhone1): </strong>@Html.DisplayFor(model => model.areaCodePhone1)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.numberPhone1): </strong>@Html.DisplayFor(model => model.numberPhone1)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phoneExtension1): </strong>@Html.DisplayFor(model => model.phoneExtension1)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countryCallingCode2): </strong>@Html.DisplayFor(model => model.countryCallingCode2)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.countryCallingCode2): </strong>@Html.DisplayFor(model => model.countryCallingCode2)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.areaCodePhone2): </strong>@Html.DisplayFor(model => model.areaCodePhone2)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.numberPhone2): </strong>@Html.DisplayFor(model => model.numberPhone2)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phoneExtension2): </strong>@Html.DisplayFor(model => model.phoneExtension2)</td>
+            </tr>
+        </tbody>
     </table>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.personalID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<br>
+<br>
