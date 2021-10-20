@@ -22,7 +22,8 @@ namespace PatrimonyBank.Controllers
         // GET: Investidors
         public async Task<IActionResult> GerenciaInvestidor()
         {
-            return View(await _context.Investidor.ToListAsync());
+            //return View(await _context.Investidor.ToListAsync());
+            return View();
         } 
 
         public async Task<IActionResult> Index()

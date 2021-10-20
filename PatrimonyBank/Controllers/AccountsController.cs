@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PatrimonyBank.Data;
+using PatrimonyBank.Reader;
 using PatrimonyBank.ViewMoldels;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,10 @@ namespace PatrimonyBank.Controllers
     {
         private readonly PatrimonyContext _context;
 
-        public AccountsController(PatrimonyContext context)
-        {
-            _context = context;
-        }
+        //public AccountsController(PatrimonyContext context)
+        //{
+        //    _context = context;
+        //}
 
         [HttpPost]
         public async Task<IActionResult>GetAccountsPF(string Cpf)
@@ -52,7 +53,7 @@ namespace PatrimonyBank.Controllers
                 maritalStatusAdditionalInfo = resultado.maritalStatusAdditionalInfo,
                 sex = resultado.sex,
                 companyCnpj = resultado.companyCnpj,
-                CPF = resultado.CPF,
+                CPF = resultado.cpf,
                 otherNationalitiesInfo = resultado.otherNationalitiesInfo,
                 typeDocument = resultado.typeDocument,
                 typeAdditionalInfo = resultado.typeAdditionalInfo,
@@ -88,6 +89,10 @@ namespace PatrimonyBank.Controllers
                 phoneExtension2 = resultado.phoneExtension2,
                 email = resultado.email
             };
+
+            ReaderPDF readerPDF = new ReaderPDF();
+            readerPDF.ReadPdf(obj);
+
             return View(obj);
         }
         //[HttpPost]
