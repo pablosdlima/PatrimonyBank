@@ -1,0 +1,69 @@
+﻿@model PatrimonyBank.ViewMoldels.AccountsPJVm
+<div class="">
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.cnpjNumber) @Html.DisplayFor(model => model.cnpjNumber) </p>
+</div>
+<br>
+<div class="centralizeDiv larguraPP flex flexEvenly">
+    <div class="center"><a asp-controller="" asp-action="" asp-route-id="@Model.ID" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
+</div>
+<br>
+<div class="centralizeDiv larguraG alturaVHG contornoM" style="padding:1%; background-color:snow;">
+    <table class="striped">
+        <thead style="color:snow;" class="blue darken-2">
+            <tr>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.email): </strong> @Html.DisplayFor(model => model.email)</td>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.companyCnpjNumber): </strong> @Html.DisplayFor(model => model.companyCnpjNumber)</td>
+                <td class="center" colspan="12"><strong>@Html.DisplayNameFor(model => model.brandName): </strong> @Html.DisplayFor(model => model.brandName)</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieCivilName): </strong>@Html.DisplayFor(model => model.partieCivilName)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.dateTime): </strong>@Html.DisplayFor(model => model.dateTime)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieSocialName): </strong> @Html.DisplayFor(model => model.partieSocialName) </td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieTradeName): </strong> @Html.DisplayFor(model => model.partieTradeName)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieShareHolding): </strong>@Html.DisplayFor(model => model.partieShareHolding)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieDocumentType): </strong>@Html.DisplayFor(model => model.partieDocumentType)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieDocumentNumber): </strong>@Html.DisplayFor(model => model.partieDocumentNumber)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.partieAdditionalInfo): </strong>@Html.DisplayFor(model => model.partieAdditionalInfo)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.expirationDate): </strong>@Html.DisplayFor(model => model.expirationDate)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adress): </strong>@Html.DisplayFor(model => model.adress)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressAdditionalInfo): </strong>@Html.DisplayFor(model => model.adressAdditionalInfo)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressDistrictName): </strong>@Html.DisplayFor(model => model.adressDistrictName)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressTownName): </strong>@Html.DisplayFor(model => model.adressTownName)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressIbgeTownCode): </strong>@Html.DisplayFor(model => model.adressIbgeTownCode)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressCountrySubDivision): </strong>@Html.DisplayFor(model => model.adressCountrySubDivision)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressPostCode): </strong>@Html.DisplayFor(model => model.adressPostCode)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressCountry): </strong>@Html.DisplayFor(model => model.adressCountry)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressCountryCode): </strong>@Html.DisplayFor(model => model.adressCountryCode)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressGeographicCoordinatesLatitude): </strong>@Html.DisplayFor(model => model.adressGeographicCoordinatesLatitude)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.adressGeographicCoordinatesLongitude): </strong>@Html.DisplayFor(model => model.adressGeographicCoordinatesLongitude)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesType): </strong>@Html.DisplayFor(model => model.phonesType)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesAdditionalInfo): </strong>@Html.DisplayFor(model => model.phonesAdditionalInfo)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesCountryCallingCode): </strong>@Html.DisplayFor(model => model.phonesCountryCallingCode)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesAreaCode): </strong>@Html.DisplayFor(model => model.phonesAreaCode)</td>
+            </tr>
+            <tr>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesNumber): </strong>@Html.DisplayFor(model => model.phonesNumber)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.phonesExtension): </strong>@Html.DisplayFor(model => model.phonesExtension)</td>
+                <td colspan="12"><strong>@Html.DisplayNameFor(model => model.email): </strong>@Html.DisplayFor(model => model.email)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>

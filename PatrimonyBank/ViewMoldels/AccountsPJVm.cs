@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatrimonyBank.ViewMoldels
 {
-    public class AccountsVm
+    public class AccountsPJVm
     {
         [Key]
         public int ID { get; set; }

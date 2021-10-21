@@ -18,15 +18,13 @@
         <h3 class="center fonteLeveP" style="color:snow;">- Ver Investidores</h3>
         <h5 class="center fonteLeveP" style="color:snow;">- Por CPF e CNPJ</h5>
     </a>
-
-
 </div>
 
 <div id="cpfId" class="larguraPM alturaPM centralizeDiv contornoM" style="display:none; border:1px solid silver;">
     <button class="btn red" onclick="OcultarModals()">X</button>
     <br>
     <p class="tituloLeve fonteLevep center">Informe o CPF para agilizarmos o cadastro pra você</p>
-     <form asp-action="GetAccountsPF" asp-controller="Accounts">
+     <form asp-action="DetailsGetAccounts" asp-controller="Accounts">
         <input id="txtCpf" placeholder="Insira CPF:" name="Cpf" required>
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
      </form>
@@ -36,8 +34,8 @@
     <button class="btn red" onclick="OcultarModals()">X</button>
     <br>
     <p class="tituloLeve fonteLevep center">Informe o CNPJ para agilizarmos o cadastro pra você</p>
-     <form asp-action="GetAccountsPF" asp-controller="Accounts">
-        <input id="txtCpf" placeholder="Insira CNPJ:" name="Cpf" required>
+     <form asp-action="DetailsGetAccountsPJ" asp-controller="Accounts">
+        <input id="txtCnpj" placeholder="Insira CNPJ:" name="Cnpj" required>
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
      </form>
 </div>
