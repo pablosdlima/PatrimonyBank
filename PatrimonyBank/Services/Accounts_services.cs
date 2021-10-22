@@ -146,7 +146,7 @@ namespace PatrimonyBank.Services
 
                 AccountsPJVm obj = new()
                 {
-                    ID = resultado.ID ?? 0,
+                    id = resultado.id,
                     brandName = resultado.brandName,
                     companyName = resultado.companyName,
                     tradeName = resultado.tradeName,

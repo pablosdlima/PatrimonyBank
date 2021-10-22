@@ -13,9 +13,19 @@ html {
 
 body {
     color: aliceblue;
-    font-size: 1.1vw; /*vw é fonte responsiva*/
+    font-size: 1.1vw; /*vw ï¿½ fonte responsiva*/
     font-family: "Poppins", sans-serif;
     color:gray;
+}
+
+.msg{
+    width: 50%;
+    height: 50vh;
+    position: fixed;
+    margin: 5% 25%;
+    border-radius: 5px;
+    background-color: #0c3b68;
+    color:white;
 }
 
 .fundoAzul{

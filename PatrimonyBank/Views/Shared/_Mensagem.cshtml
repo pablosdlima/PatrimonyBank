@@ -1,0 +1,39 @@
+@if(@ViewBag.CPFeCNPJ == "CPF não encontrado"){
+    <div id="id01" class="msg contornoG">
+        <br><br>
+            <div class="">
+                <header class="">
+                    <h4 align="center">CPF informado não encontrado</h4>
+                    <h6 align="center" color="silver">Deseja Registrar um novo?</h6>
+                </header>
+                <br>
+                <div class="center">
+                    <a asp-action="CreateAccountsPF" asp-controller="Accounts" class="btn waves-effect waves-light btn-large blue" type="submit" name="action">
+                        Sim
+                        <i class="material-icons left">add</i>
+                    </a>
+                    <a asp-action="GerenciaInvestidor" asp-controller="Investidors" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">close</i>Não</a>
+                </div>
+            </div>
+    </div>
+}
+@if(@ViewBag.CPFeCNPJ == "CNPJ não encontrado")
+{
+    <div id="id01" class="msg contornoG">
+        <br><br>
+            <div class="">
+                <header class="">
+                    <h4 align="center">CNPJ informado não encontrado</h4>
+                    <h6 align="center" color="silver">Deseja Registrar um novo?</h6>
+                </header>
+                <br>
+                <div class="center">
+                    <a asp-action="CreateAccountsPJ" asp-controller="Accounts" class="btn waves-effect waves-light btn-large blue" type="submit" name="action">
+                        Sim
+                        <i class="material-icons left">add</i>
+                    </a>
+                    <a asp-action="GerenciaInvestidor" asp-controller="Investidors" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">close</i>Não</a>
+                </div>
+            </div>
+    </div>
+}

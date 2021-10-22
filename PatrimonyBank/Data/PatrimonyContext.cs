@@ -14,7 +14,8 @@ namespace PatrimonyBank.Data
         {
 
         }
-        public DbSet<Investidor> Investidor { get; set; }
-        public DbSet<PatrimonyBank.ViewMoldels.AccountPFVm> AccountPFVm { get; set; }
+        public DbSet<PessoaFisica> PessoaFisica { get; set; }
+        public DbSet<PessoaJuridica> PessoaJuridica { get; set; }
+        public DbSet<AccountPFVm> AccountPFVm { get; set; }
     }
 }

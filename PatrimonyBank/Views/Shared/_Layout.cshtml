@@ -11,31 +11,30 @@
     <link rel="stylesheet" href="~/css/Interface.css">
 </head>
 <body>
-     <header class="flex contornoP contornoP">
+    <header class="flex contornoP contornoP">
         <img class="" src="~/img/Patrimony.png" alt="Logo Patrimony.png" width="5%" style="margin:2%;">
-            <ul class="flexEvenly flex centralizeY">
-                <li class="flow-text">
-                    <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                </li>
-                <li class="flow-text">
-                    <a class="" asp-area="" asp-controller="Accounts" asp-action="ListarAccountsPF">Lista de Registros</a>
-                </li>
-                <li class="flow-text">
-                    <a class="" asp-area="" asp-controller="Investidors" asp-action="GerenciaInvestidor">Contas Investidores</a>
-                </li>
-                <li class="flow-text" invisible>
-                    <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
-                </li>
-            </ul>
-    </header> 
+        <ul class="flexEvenly flex centralizeY">
+            <li class="flow-text">
+                <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="flow-text">
+                <a class="" asp-area="" asp-controller="Accounts" asp-action="ListarAccountsPF">Lista de Registros</a>
+            </li>
+            <li class="flow-text">
+                <a class="" asp-area="" asp-controller="Investidors" asp-action="GerenciaInvestidor">Gerenciar Investidores</a>
+            </li>
+            <li class="flow-text" invisible>
+                <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+            </li>
+        </ul>
+    </header>
     <div class="alturaVhG CentralizeY laguraG">
-            @RenderBody()
+        @RenderBody()
     </div>
     <br>
+    <script src="~/lib/materialize/js/materialize.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,5 +1,5 @@
 ﻿
-
+<partial name="_Mensagem">
 <div class="">
     <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Gerencie os Investidores</p>
 </div>
@@ -14,7 +14,7 @@
         <h5 class="center fonteLeveP" style="color:snow;">Por CNPJ</h5>
     </div>
 
-    <a id="" asp-action="index" asp-controller="Investidors" class="alturaG larguraP blue accent-2 arredondarTopoDireita ops">
+    <a id=""asp-action="ListarAccountsPF" asp-controller="Accounts" class="alturaG larguraP blue accent-2 arredondarTopoDireita ops">
         <h3 class="center fonteLeveP" style="color:snow;">- Ver Investidores</h3>
         <h5 class="center fonteLeveP" style="color:snow;">- Por CPF e CNPJ</h5>
     </a>
@@ -25,9 +25,10 @@
     <br>
     <p class="tituloLeve fonteLevep center">Informe o CPF para agilizarmos o cadastro pra você</p>
      <form asp-action="DetailsGetAccounts" asp-controller="Accounts">
-        <input id="txtCpf" placeholder="Insira CPF:" name="Cpf" required>
+        <input id="txtCpf" placeholder="Insira CPF:" name="Cpf" required style="padding:1%;">
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
      </form>
+     <br>
 </div>
 
 <div id="cnpjId" class="larguraPM alturaPM centralizeDiv contornoM" style="display:none; border:1px solid silver;">
@@ -35,9 +36,10 @@
     <br>
     <p class="tituloLeve fonteLevep center">Informe o CNPJ para agilizarmos o cadastro pra você</p>
      <form asp-action="DetailsGetAccountsPJ" asp-controller="Accounts">
-        <input id="txtCnpj" placeholder="Insira CNPJ:" name="Cnpj" required>
+        <input id="txtCnpj" placeholder="Insira CNPJ:" name="cnpj" required style="padding:1%;">
         <input type="submit" value="Confirmar" class="center btn-large blue accent-2" style="margin:4% 40%;">
      </form>
+     <br>
 </div>
 
 @section Scripts{

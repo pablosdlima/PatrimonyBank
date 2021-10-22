@@ -1,0 +1,240 @@
+﻿@model PatrimonyBank.Models.PessoaFisica
+
+<div class="">
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Novo Investidor. Pessoa Fisica</p>
+    <p class="center">Preencha os campos abaixo para concluir o cadastro</p>
+</div>
+<br>
+<div class="centralizeDiv larguraMG contornoM" style="border: 5px solid #6bafed;">
+    <form asp-action="CreateAccountsPF" class="col s12">
+        <div asp-validation-summary="ModelOnly" class="validate"></div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input asp-for="BrandName" class="validade" />
+                <label asp-for="BrandName" class=""></label>
+                <span asp-validation-for="BrandName" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CivilName" class="" />
+                <label asp-for="CivilName" class=""></label>
+                <span asp-validation-for="CivilName" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="SocialName" class="" />
+                <label asp-for="SocialName" class=""></label>
+                <span asp-validation-for="SocialName" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="DateTime" class="" />
+                <label asp-for="DateTime" class=""></label>
+                <span asp-validation-for="DateTime" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="MaritalStatusCode" class="" />
+                <label asp-for="MaritalStatusCode" class=""></label>
+                <span asp-validation-for="MaritalStatusCode" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="MaritalStatusAdditionalInfo" class="" />
+                <label asp-for="MaritalStatusAdditionalInfo" class=""></label>
+                <span asp-validation-for="MaritalStatusAdditionalInfo" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Sex" class="" />
+                <label asp-for="Sex" class=""></label>
+                <span asp-validation-for="Sex" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CompanyCnpj" class="" />
+                <label asp-for="CompanyCnpj" class=""></label>
+                <span asp-validation-for="CompanyCnpj" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CPF" class="" />
+                <label asp-for="CPF" class=""></label>
+                <span asp-validation-for="CPF" class="validate"></span>
+            </div>
+            <div class="input-field col s6 form-check">
+                <input class="form-check-input" asp-for="HasBrazilianNationality" /> @Html.DisplayNameFor(model => model.HasBrazilianNationality)
+                <label class="form-check-label"></label>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="OtherNationalitiesInfo" class="" />
+                <label asp-for="OtherNationalitiesInfo" class=""></label>
+                <span asp-validation-for="OtherNationalitiesInfo" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TypeDocument" class="" />
+                <label asp-for="TypeDocument" class=""></label>
+                <span asp-validation-for="TypeDocument" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TypeAdditionalInfo" class="" />
+                <label asp-for="TypeAdditionalInfo" class=""></label>
+                <span asp-validation-for="TypeAdditionalInfo" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="NumberDocument" class="" />
+                <label asp-for="NumberDocument" class=""></label>
+                <span asp-validation-for="NumberDocument" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CheckDigit" class="" />
+                <label asp-for="CheckDigit" class=""></label>
+                <span asp-validation-for="CheckDigit" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AdditionalInfo" class="" />
+                <label asp-for="AdditionalInfo" class=""></label>
+                <span asp-validation-for="AdditionalInfo" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="ExpirationDate" class="" />
+                <label asp-for="ExpirationDate" class=""></label>
+                <span asp-validation-for="ExpirationDate" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="IssueDate" class="" />
+                <label asp-for="IssueDate" class=""></label>
+                <span asp-validation-for="IssueDate" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Country" class="" />
+                <label asp-for="Country" class=""></label>
+                <span asp-validation-for="Country" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TypeFiliation" class="" />
+                <label asp-for="TypeFiliation" class=""></label>
+                <span asp-validation-for="TypeFiliation" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CivilNameFiliation" class="" />
+                <label asp-for="CivilNameFiliation" class=""></label>
+                <span asp-validation-for="CivilNameFiliation" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="SocialNameFiliation" class="" />
+                <label asp-for="SocialNameFiliation" class=""></label>
+                <span asp-validation-for="SocialNameFiliation" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Address" class="" />
+                <label asp-for="Address" class=""></label>
+                <span asp-validation-for="Address" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AdditionalInfoAdress" class="" />
+                <label asp-for="AdditionalInfoAdress" class=""></label>
+                <span asp-validation-for="AdditionalInfoAdress" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="DistrictName" class="" />
+                <label asp-for="DistrictName" class=""></label>
+                <span asp-validation-for="DistrictName" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TownName" class="" />
+                <label asp-for="TownName" class=""></label>
+                <span asp-validation-for="TownName" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="IbgeTownCode" class="" />
+                <label asp-for="IbgeTownCode" class=""></label>
+                <span asp-validation-for="IbgeTownCode" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CountrySubDivision" class="" />
+                <label asp-for="CountrySubDivision" class=""></label>
+                <span asp-validation-for="CountrySubDivision" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="PostCode" class="" />
+                <label asp-for="PostCode" class=""></label>
+                <span asp-validation-for="PostCode" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CountryAdress" class="" />
+                <label asp-for="CountryAdress" class=""></label>
+                <span asp-validation-for="CountryAdress" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CountryCode" class="" />
+                <label asp-for="CountryCode" class=""></label>
+                <span asp-validation-for="CountryCode" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TypePhone1" class="" />
+                <label asp-for="TypePhone1" class=""></label>
+                <span asp-validation-for="TypePhone1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AdditionalInfoPhone1" class="" />
+                <label asp-for="AdditionalInfoPhone1" class=""></label>
+                <span asp-validation-for="AdditionalInfoPhone1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CountryCallingCode1" class="" />
+                <label asp-for="CountryCallingCode1" class=""></label>
+                <span asp-validation-for="CountryCallingCode1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AreaCodePhone1" class="" />
+                <label asp-for="AreaCodePhone1" class=""></label>
+                <span asp-validation-for="AreaCodePhone1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="NumberPhone1" class="" />
+                <label asp-for="NumberPhone1" class=""></label>
+                <span asp-validation-for="NumberPhone1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="PhoneExtension1" class="" />
+                <label asp-for="PhoneExtension1" class=""></label>
+                <span asp-validation-for="PhoneExtension1" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="TypePhone2" class="" />
+                <label asp-for="TypePhone2" class=""></label>
+                <span asp-validation-for="TypePhone2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AdditionalInfoPhone2" class="" />
+                <label asp-for="AdditionalInfoPhone2" class=""></label>
+                <span asp-validation-for="AdditionalInfoPhone2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="CountryCallingCode2" class="" />
+                <label asp-for="CountryCallingCode2" class=""></label>
+                <span asp-validation-for="CountryCallingCode2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="AreaCodePhone2" class="" />
+                <label asp-for="AreaCodePhone2" class=""></label>
+                <span asp-validation-for="AreaCodePhone2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="NumberPhone2" class="" />
+                <label asp-for="NumberPhone2" class=""></label>
+                <span asp-validation-for="NumberPhone2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="PhoneExtension2" class="" />
+                <label asp-for="PhoneExtension2" class=""></label>
+                <span asp-validation-for="PhoneExtension2" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Email" class="" />
+                <label asp-for="Email" class=""></label>
+                <span asp-validation-for="Email" class="validate"></span>
+            </div>
+            <div class="input-field col s6">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div><br><br>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

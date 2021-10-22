@@ -4,7 +4,14 @@
 </div>
 <br>
 <div class="centralizeDiv larguraPP flex flexEvenly">
-    <div class="center"><a asp-controller="" asp-action="" asp-route-id="@Model.ID" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
+    <div class="center"><a asp-controller="" asp-action="" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
+    <form class="center" style="margin-left:1%;" asp-action="SaveAccountsPJ" asp-controller="Accounts" target="">
+        <input type="hidden" class="" name="cnpj" value="@Model.cnpjNumber" />
+        <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">
+            Salvar
+            <i class="material-icons right">save</i>
+        </button>
+    </form>
 </div>
 <br>
 <div class="centralizeDiv larguraG alturaVHG contornoM" style="padding:1%; background-color:snow;">

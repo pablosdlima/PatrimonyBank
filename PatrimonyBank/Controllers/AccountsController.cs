@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using PatrimonyBank.Data;
+using PatrimonyBank.Models;
 using PatrimonyBank.Reader;
 using PatrimonyBank.Services;
 using PatrimonyBank.ViewMoldels;
@@ -21,73 +23,178 @@ namespace PatrimonyBank.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public async Task<IActionResult> ListarAccountsPF()
         {
-            List<AccountPFVm> lista = new();
-
-            HttpClient http = new();
-            http.BaseAddress = new Uri("https://patrimonybankapi.azurewebsites.net/api/v1/Account/");
-            HttpResponseMessage resposta = await http.GetAsync("?");
-            resposta.EnsureSuccessStatusCode();
-
-            string conteudo = resposta.Content.ReadAsStringAsync().Result;
-
-            dynamic resultado = JsonConvert.DeserializeObject(conteudo);
-
-            foreach(var item in resultado)
-            {
-                AccountPFVm obj = new()
-                {
-                    personalID = item.personalID,
-                    brandName = item.brandName,
-                    civilName = item.civilName,
-                    socialName = item.socialName,
-                    dateTime = item.dateTime,
-                    maritalStatusCode = item.maritalStatusCode,
-                    maritalStatusAdditionalInfo = item.maritalStatusAdditionalInfo,
-                    sex = item.sex,
-                    companyCnpj = item.companyCnpj ?? "Não informado",
-                    CPF = item.cpf,
-                    otherNationalitiesInfo = item.otherNationalitiesInfo,
-                    typeDocument = item.typeDocument,
-                    typeAdditionalInfo = item.typeAdditionalInfo,
-                    numberDocument = item.numberDocument,
-                    checkDigit = item.checkDigit,
-                    additionalInfo = item.additionalInfo,
-                    expirationDate = item.expirationDate,
-                    issueDate = item.issueDate,
-                    country = item.country,
-                    typeFiliation = item.typeFiliation,
-                    civilNameFiliation = item.civilNameFiliation,
-                    socialNameFiliation = item.socialNameFiliation,
-                    address = item.address,
-                    additionalInfoAdress = item.additionalInfoAdress,
-                    districtName = item.districtName,
-                    townName = item.townName,
-                    ibgeTownCode = item.ibgeTownCode,
-                    countrySubDivision = item.countrySubDivision,
-                    postCode = item.postCode,
-                    countryAdress = item.countryAdress,
-                    countryCode = item.countryCode,
-                    typePhone1 = item.typePhone1,
-                    additionalInfoPhone1 = item.additionalInfoPhone1,
-                    countryCallingCode1 = item.countryCallingCode1,
-                    areaCodePhone1 = item.areaCodePhone1,
-                    numberPhone1 = item.numberPhone1,
-                    phoneExtension1 = item.phoneExtension1,
-                    typePhone2 = item.typePhone2,
-                    additionalInfoPhone2 = item.additionalInfoPhone2,
-                    countryCallingCode2 = item.countryCallingCode2,
-                    areaCodePhone2 = item.areaCodePhone2,
-                    numberPhone2 = item.numberPhone2,
-                    phoneExtension2 = item.phoneExtension2,
-                    email = item.email
-                };
-
-                lista.Add(obj);
-            }
-            return View(lista);
+            var resultado = await _context.PessoaFisica.ToListAsync();
+            return View(resultado);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ListarAccountsPJ()
+        {
+            var resultado = await _context.PessoaJuridica.ToListAsync();
+            return View(resultado);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SaveAcccountsPF(string cpf)
+        {
+            try
+            {
+                Accounts_services objAPI = new();
+                AccountPFVm obj = await objAPI.AccountPF(cpf);
+
+                PessoaFisica model = new()
+                {
+                    BrandName = obj.brandName,
+                    CivilName = obj.civilName,
+                    SocialName = obj.socialName,
+                    DateTime = obj.dateTime,
+                    MaritalStatusCode = obj.maritalStatusCode,
+                    MaritalStatusAdditionalInfo = obj.maritalStatusAdditionalInfo,
+                    Sex = obj.sex,
+                    CompanyCnpj = obj.companyCnpj,
+                    CPF = obj.CPF,
+                    HasBrazilianNationality = obj.hasBrazilianNationality,
+                    OtherNationalitiesInfo = obj.otherNationalitiesInfo,
+                    TypeDocument = obj.typeDocument,
+                    TypeAdditionalInfo = obj.typeAdditionalInfo,
+                    NumberDocument = obj.numberDocument,
+                    CheckDigit = obj.checkDigit,
+                    AdditionalInfo = obj.additionalInfo,
+                    ExpirationDate = obj.expirationDate,
+                    IssueDate = obj.issueDate,
+                    Country = obj.country,
+                    TypeFiliation = obj.typeFiliation,
+                    CivilNameFiliation = obj.civilNameFiliation,
+                    SocialNameFiliation = obj.socialNameFiliation,
+                    Address = obj.address,
+                    AdditionalInfoAdress = obj.additionalInfoAdress,
+                    DistrictName = obj.districtName,
+                    TownName = obj.townName,
+                    IbgeTownCode = obj.ibgeTownCode,
+                    CountryAdress = obj.countryAdress,
+                    CountryCode = obj.countryCode,
+                    TypePhone1 = obj.typePhone1,
+                    AdditionalInfoPhone1 = obj.additionalInfoPhone1,
+                    CountryCallingCode1 = obj.countryCallingCode1,
+                    AreaCodePhone1 = obj.areaCodePhone1,
+                    NumberPhone1 = obj.numberPhone1,
+                    PhoneExtension1 = obj.phoneExtension1,
+                    NumberPhone2 = obj.numberPhone2,
+                    TypePhone2 = obj.typePhone2,
+                    AdditionalInfoPhone2 = obj.additionalInfoPhone2,
+                    CountryCallingCode2 = obj.countryCallingCode2,
+                    AreaCodePhone2 = obj.areaCodePhone2,
+                    PhoneExtension2 = obj.phoneExtension2,
+                    Email = obj.email
+                };
+                await _context.AddAsync(model);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("ListarAccountsPF");
+            }
+            catch (Exception erro)
+            {
+                throw new Exception(erro.Message);
+            }
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SaveAccountsPJ(string cnpj)
+        {
+            try
+            {
+                Accounts_services objAPI = new();
+                AccountsPJVm obj = await objAPI.AccountPJ(cnpj);
+
+                PessoaJuridica model = new()
+                {
+                    BrandName = obj.brandName,
+                    CompanyName = obj.companyName,
+                    TradeName = obj.tradeName,
+                    IncorporationDate = obj.IncorporationDate,
+                    CnpjNumber = obj.cnpjNumber,
+                    CompanyCnpjNumber = obj.companyCnpjNumber,
+                    OtherDocumentType = obj.otherDocumentType,
+                    OtherDocumentNumber = obj.otherDocumentNumber,
+                    OtherDocumentCountry = obj.otherDocumentCountry,
+                    ExpirationDate = obj.expirationDate,
+                    PartiesPersonType = obj.partiesPersonType,
+                    PartieType = obj.partieType,
+                    PartieCivilName = obj.partieCivilName,
+                    PartieSocialName = obj.partieSocialName,
+                    PartieTradeName = obj.partieTradeName,
+                    DateTime = obj.dateTime,
+                    PartieShareHolding = obj.partieShareHolding,
+                    PartieDocumentType = obj.partieDocumentType,
+                    PartieDocumentNumber = obj.partieDocumentNumber,
+                    PartieDocumentCountry = obj.partieDocumentCountry,
+                    PartieDocumentExpirationOnDate = obj.partieDocumentExpirationOnDate,
+                    DocumentIssueDate = obj.documentIssueDate,
+                    Adress = obj.adress,
+                    AdressAdditionalInfo = obj.adressAdditionalInfo,
+                    AdressDistrictName = obj.adressDistrictName,
+                    AdressTownName = obj.adressTownName,
+                    AdressIbgeTownCode = obj.adressIbgeTownCode,
+                    AdressCountrySubDivision = obj.adressCountrySubDivision,
+                    AdressPostCode = obj.adressPostCode,
+                    AdressCountry = obj.adressCountry,
+                    AdressCountryCode = obj.adressCountryCode,
+                    AdressGeographicCoordinatesLatitude = obj.adressGeographicCoordinatesLatitude,
+                    AdressGeographicCoordinatesLongitude = obj.adressGeographicCoordinatesLongitude,
+                    PhonesType = obj.phonesType,
+                    PhonesAdditionalInfo = obj.phonesAdditionalInfo,
+                    PhonesCountryCallingCode = obj.phonesCountryCallingCode,
+                    PhonesAreaCode = obj.phonesAreaCode,
+                    PhonesNumber = obj.phonesNumber,
+                    PhonesExtension = obj.phonesExtension,
+                    Email = obj.email
+                };
+                _context.Add(model);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("ListarAccountsPF");
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception(erro.Message);
+            }
+        }
+
+        public IActionResult CreateAccountsPF()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAccountsPF(PessoaFisica model)
+        {
+            await _context.AddAsync(model);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("ListarAccountsPF");
+        }
+
+        public IActionResult CreateAccountsPJ()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAccountsPJ(PessoaJuridica model)
+        {
+            await _context.AddAsync(model);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("ListarAccountsPJ");
+        }
+
 
         public async Task<IActionResult> DetailsGetAccounts(string cpf)
         {
@@ -107,9 +214,11 @@ namespace PatrimonyBank.Controllers
 
                 return View(obj);
             }
-            catch (Exception erro)
+            catch (Exception)
             {
-                throw new Exception(erro.Message);
+                return RedirectToAction("GerenciaInvestidor", "Investidors", new {msg = 1});
+                
+                // throw new Exception(erro.Message);
             }
         }
 
@@ -132,9 +241,10 @@ namespace PatrimonyBank.Controllers
 
                 return View(obj);
             }
-            catch (Exception erro)
+            catch (Exception)
             {
-                throw new Exception(erro.Message);
+                return RedirectToAction("GerenciaInvestidor", "Investidors", new { msg = 2 });
+                //throw new Exception(erro.Message);
             }
         }   
     }

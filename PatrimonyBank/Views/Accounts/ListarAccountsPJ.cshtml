@@ -1,31 +1,30 @@
-﻿@model IEnumerable<PatrimonyBank.Models.PessoaFisica>
+﻿@model IEnumerable<PatrimonyBank.Models.PessoaJuridica>
 
 <a asp-action="GerenciaInvestidor" asp-controller="Investidors" class="waves-effect waves-light btn blue accent-2" style="position:fixed;" title=""><i class="material-icons left">arrow_back</i></a>
 <a asp-action="ListarAccountsPF" asp-controller="Accounts" class="waves-effect waves-light btn blue accent-2" style="position:fixed; right:10%;" title=""><i class="material-icons left">assignment_ind</i>Pessoa Fisica</a>
 <a asp-action="ListarAccountsPJ" asp-controller="Accounts" class="waves-effect waves-light btn blue darken-4" style="position:fixed; right:10%; margin-top:3%;" title=""><i class="material-icons left">domain</i>Pessoa Juridica</a>
 <div class="">
-    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Listagem Pessoa Fisica</p>
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Listagem Pessoa Juridica</p>
     <p class="center">Aqui você encontra os registros persistidos em nossa base de dados</p><br>
 </div>
 <table class="striped centralizeDiv larguraG">
     <thead class="blue accent-2" style="color:white">
         <tr>
             <th class="center">
-                @Html.DisplayNameFor(model => model.CPF)
-            </th> 
-            <th class="center">
-                @Html.DisplayNameFor(model => model.CivilName)
+                @Html.DisplayNameFor(model => model.CnpjNumber)
             </th>
             <th class="center">
-                @Html.DisplayNameFor(model => model.AdditionalInfo)
+                @Html.DisplayNameFor(model => model.BrandName)
             </th>
             <th class="center">
-                @Html.DisplayNameFor(model => model.CivilNameFiliation)
-            </th> 
+                @Html.DisplayNameFor(model => model.Adress)
+            </th>
+            <th class="center">
+                @Html.DisplayNameFor(model => model.PhonesNumber)
+            </th>
             <th class="center">
                 PDF
             </th>
-
         </tr>
     </thead>
     <tbody>
@@ -33,17 +32,17 @@
         {
             <tr>
                 <td class="center">
-                    @Html.DisplayFor(modelItem => item.CPF)
+                    @Html.DisplayFor(modelItem => item.CnpjNumber)
                 </td>
                 <td class="center">
-                    @Html.DisplayFor(modelItem => item.CivilName)
-                </td> 
-                <td class="center">
-                    @Html.DisplayFor(modelItem => item.AdditionalInfo)
+                    @Html.DisplayFor(modelItem => item.BrandName)
                 </td>
                 <td class="center">
-                    @Html.DisplayFor(modelItem => item.CivilNameFiliation)
-                </td> 
+                    @Html.DisplayFor(modelItem => item.Adress)
+                </td>
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.PhonesNumber)
+                </td>
                 <td class="center">
                     <div class="center"><a asp-controller="" asp-action="" asp-route-id="" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
                 </td>

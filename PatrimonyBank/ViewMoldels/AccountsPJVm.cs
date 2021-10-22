@@ -9,7 +9,7 @@ namespace PatrimonyBank.ViewMoldels
     public class AccountsPJVm
     {
         [Key]
-        public int ID { get; set; }
+        public int id { get; set; }
 
         [Display(Name = "Marca")]
         public string brandName { get; set; }

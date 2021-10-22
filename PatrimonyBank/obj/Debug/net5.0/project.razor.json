@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\PatrimonyBank.csproj",
+  "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\PatrimonyBank.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,68 +15619,88 @@
   "RootNamespace": "PatrimonyBank",
   "Documents": [
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Accounts\\ListarAccountsPF.cshtml",
+      "TargetPath": "Views\\Accounts\\ListarAccountsPF.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\GerenciaInvestidor.cshtml",
-      "TargetPath": "Views\\Investidors\\GerenciaInvestidor.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Index.cshtml",
-      "TargetPath": "Views\\Investidors\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Create.cshtml",
-      "TargetPath": "Views\\Investidors\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Delete.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Delete.cshtml",
       "TargetPath": "Views\\Investidors\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Edit.cshtml",
-      "TargetPath": "Views\\Investidors\\Edit.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Accounts\\DetailsGetAccounts.cshtml",
+      "TargetPath": "Views\\Accounts\\DetailsGetAccounts.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Index.cshtml",
+      "TargetPath": "Views\\Investidors\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Details.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_Mensagem.cshtml",
+      "TargetPath": "Views\\Shared\\_Mensagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Details.cshtml",
       "TargetPath": "Views\\Investidors\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Create.cshtml",
+      "TargetPath": "Views\\Investidors\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Accounts\\DetailsGetAccountsPJ.cshtml",
+      "TargetPath": "Views\\Accounts\\DetailsGetAccountsPJ.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\Edit.cshtml",
+      "TargetPath": "Views\\Investidors\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Aplicações\\Hackatudo\\PatrimonyBank\\PatrimonyBank\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lpablo\\Desktop\\PatrimonyBank\\PatrimonyBank\\Views\\Investidors\\GerenciaInvestidor.cshtml",
+      "TargetPath": "Views\\Investidors\\GerenciaInvestidor.cshtml",
       "FileKind": "mvc"
     }
   ],
