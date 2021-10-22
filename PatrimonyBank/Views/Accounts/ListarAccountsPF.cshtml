@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PatrimonyBank.ViewMoldels.AccountPFVm>
+
+<a asp-action="GerenciaInvestidor" class="waves-effect waves-light btn blue accent-2" style="position:fixed;" title=""><i class="material-icons left">arrow_back</i></a>
+<div class="">
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Listagem Pessoa Fisica</p>
+</div>
+<table class="striped centralizeDiv larguraG">
+    <thead class="blue accent-2" style="color:white">
+        <tr>
+            <th class="center">
+                @Html.DisplayNameFor(model => model.CPF)
+            </th> 
+            <th class="center">
+                @Html.DisplayNameFor(model => model.companyCnpj)
+            </th>
+            <th class="center">
+                @Html.DisplayNameFor(model => model.civilName)
+            </th>
+            <th class="center">
+                @Html.DisplayNameFor(model => model.civilNameFiliation)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.companyCnpj)
+                </td>
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.civilName)
+                </td> 
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.civilNameFiliation)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
