@@ -147,12 +147,7 @@ D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Vie
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Accounts\ListarAccountsPF.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\Create.cshtml.g.cs
-D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\Delete.cshtml.g.cs
-D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\Details.cshtml.g.cs
-D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\Edit.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\GerenciaInvestidor.cshtml.g.cs
-D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Investidors\Index.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -326,3 +321,7 @@ C:\Users\lpablo\Desktop\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBa
 C:\Users\lpablo\Desktop\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\ref\PatrimonyBank.dll
 C:\Users\lpablo\Desktop\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.pdb
 C:\Users\lpablo\Desktop\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\PatrimonyBank.genruntimeconfig.cache
+D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Accounts\CreateAccountsPF.cshtml.g.cs
+D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Accounts\CreateAccountsPJ.cshtml.g.cs
+D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Accounts\ListarAccountsPJ.cshtml.g.cs
+D:\Aplicações\Hackatudo\PatrimonyBank\PatrimonyBank\obj\Debug\net5.0\Razor\Views\Shared\_Mensagem.cshtml.g.cs

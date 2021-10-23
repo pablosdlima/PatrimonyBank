@@ -246,7 +246,24 @@ namespace PatrimonyBank.Controllers
                 return RedirectToAction("GerenciaInvestidor", "Investidors", new { msg = 2 });
                 //throw new Exception(erro.Message);
             }
-        }   
+        }
+
+
+        public async Task<IActionResult> PdfAccountsPF(string cpf)
+        {
+            Accounts_services objAPI = new();
+            AccountPFVm obj = await objAPI.AccountPF(cpf);
+
+            ReaderPDF objPdf = new();
+            bool result =  objPdf.ReadPdf(obj);
+
+            if (result is true) return Ok();
+            if (result is false) return NotFound();
+
+            return View();
+
+        }
+
     }
 }
 

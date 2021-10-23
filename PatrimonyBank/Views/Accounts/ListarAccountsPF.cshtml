@@ -45,7 +45,12 @@
                     @Html.DisplayFor(modelItem => item.CivilNameFiliation)
                 </td> 
                 <td class="center">
-                    <div class="center"><a asp-controller="" asp-action="" asp-route-id="" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
+                    <form class="" asp-action="PdfAccountsPF" asp-controller="Accounts">               
+                        <input type="hidden" class="" name="cpf" value="@item.CPF"/>
+                        <button class="btn deep-purple  deep-orange darken-2" type="submit" name="action">
+                            <i class="material-icons">picture_as_pdf</i>
+                        </button>
+                    </form>
                 </td>
             </tr>
         }
