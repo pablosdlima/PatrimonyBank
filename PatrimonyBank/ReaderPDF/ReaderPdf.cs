@@ -16,13 +16,13 @@ namespace PatrimonyBank.Reader
             try
             {
                 // Define o caminho onde o formulário está
-                PdfReader pdfReader = new PdfReader(@"C:\Temp\PDF\Documents\FichaCadastral_PF_Anexo_I.pdf");
+                PdfReader pdfReader = new PdfReader(@"C:\PatrimonyPDF\FichaCadastral_PF_Anexo_I.pdf");
 
                 // Chama o método para pegar os campos do PDF com os valores
                 var fieldList = GetFormFieldNamesWithValues(pdfReader);
 
                 // Cria um novo arquivo, que será o editado
-                string newFile = @"C:\Temp\PDF\Documents\FichaCadastral_PF_Anexo_I_Edit_completed.pdf";
+                string newFile = @$"C:\PatrimonyPDF\FichaCadastral_PF_{account.CPF}.pdf";
                 PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileStream(newFile, FileMode.Create));
 
                 AcroFields pdfFormFields = pdfStamper.AcroFields;
@@ -80,8 +80,6 @@ namespace PatrimonyBank.Reader
 
                 }
 
-
-
                 if (account.typeAdditionalInfo.ToUpper() != "")
                 {
                     pdfFormFields.SetField("form1[0].Pg0[0].titular2TipoRG[0]", account.typeAdditionalInfo, true);
@@ -90,11 +88,13 @@ namespace PatrimonyBank.Reader
                     pdfFormFields.SetField("form1[0].Pg0[0].titular2DataExpedicaoRG[0]", account.issueDate.ToShortDateString());
                 }
 
-                    // Fecha o arquivo
+                // Fecha o arquivo
                 pdfStamper.Close();
                 return true;
-            }catch (Exception)
+            }catch (Exception err)
             {
+                Console.WriteLine(err);
+
                 return false;
             }
             

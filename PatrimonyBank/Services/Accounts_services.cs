@@ -35,7 +35,7 @@ namespace PatrimonyBank.Services
                 CPF = resultado.cpf,
                 otherNationalitiesInfo = resultado.otherNationalitiesInfo,
                 typeDocument = resultado.typeDocument,
-                typeAdditionalInfo = resultado.typeAdditionalInfo,
+                typeAdditionalInfo = resultado.typeAdditionalInfo ?? "Vazio",
                 numberDocument = resultado.numberDocument,
                 checkDigit = resultado.checkDigit,
                 additionalInfo = resultado.additionalInfo,

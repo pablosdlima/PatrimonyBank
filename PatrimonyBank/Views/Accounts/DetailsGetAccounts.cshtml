@@ -1,15 +1,20 @@
 ﻿@model PatrimonyBank.ViewMoldels.AccountPFVm
 <div class="">
-    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.CPF) @Html.DisplayFor(model => model.CPF) </p>
+    <p class="tituloLeve fonteLeveM center bordaTxtTitulo">Cpf : @Html.DisplayFor(model => model.CPF)</p>
     <p class="center">Registro encontrado pelo CPF informado, escolha o que fazer dentre as opções abaixo.</p>
 </div>
 <br>
 <div class="centralizeDiv larguraPP flex flexEvenly">
-    <div class="center"><a asp-controller="" asp-action="" asp-route-id="@Model.personalID" class="btn red darken-3"><i class="material-icons">picture_as_pdf</i></a></div>
     <form class="center" style="margin-left:1%;" asp-action="SaveAcccountsPF" asp-controller="Accounts" target="">
         <input type="hidden" class="" name="cpf" value="@Model.CPF" />
-        <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Salvar
+        <button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Salvar
             <i class="material-icons right">save</i>
+        </button>
+    </form> 
+    <form class="center" style="margin-left:1%;" asp-action="PdfAccountsPF" asp-controller="Accounts" target="">
+        <input type="hidden" class="" name="cpf" value="@Model.CPF" />
+        <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">
+            <i class="material-icons right">picture_as_pdf</i>
         </button>
     </form>
 </div>

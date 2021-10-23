@@ -257,7 +257,7 @@ namespace PatrimonyBank.Controllers
             ReaderPDF objPdf = new();
             bool result =  objPdf.ReadPdf(obj);
 
-            if (result is true) return Ok();
+            if (result is true) return RedirectToAction(nameof(ListarAccountsPF));
             if (result is false) return NotFound();
 
             return View();
